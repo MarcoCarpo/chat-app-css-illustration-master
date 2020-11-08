@@ -50,7 +50,8 @@ body {
 }
 
 body main {
-  height: 100%;
+  min-width: 40rem;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,11 +73,12 @@ body main .gradient-bg {
 }
 
 body main .pink-bg {
-  display: none;
   z-index: -1;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 100%;
+  top: 100%;
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
 }
 
 body main #phone {
@@ -89,8 +91,8 @@ body main #phone {
   min-height: max-content;
   margin-top: 7rem;
   overflow: hidden;
-  -webkit-box-shadow: 0rem 7rem 8.4rem rgba(0, 0, 0, 0.226);
-          box-shadow: 0rem 7rem 8.4rem rgba(0, 0, 0, 0.226);
+  -webkit-box-shadow: 0rem 7rem 8.4rem rgba(0, 0, 0, 0.144);
+          box-shadow: 0rem 7rem 8.4rem rgba(0, 0, 0, 0.144);
 }
 
 body main #phone .upper-phone {
@@ -308,7 +310,7 @@ body main #phone .type-message .submit {
 }
 
 body main #booking {
-  margin: 4rem 3rem;
+  margin: auto 3rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -322,9 +324,17 @@ body main #booking {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #booking .booking-title {
+  margin-top: 2rem;
 }
 
 body main #booking .booking-description {
+  max-width: 40rem;
   margin: 2rem 0;
   line-height: 3rem;
   font-size: 1.6rem;
@@ -343,5 +353,25 @@ body main #booking .booking-description {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (min-width: 1024px) {
+  body main {
+    width: 50%;
+    margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main .gradient-bg {
+    z-index: -1;
+    position: absolute;
+    left: -60%;
+    top: -20%;
+  }
+  body main #booking {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

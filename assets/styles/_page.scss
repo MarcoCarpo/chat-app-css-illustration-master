@@ -4,7 +4,8 @@ body {
   height: 100vh;
 
   main {
-    height: 100%;
+    min-width: 40rem;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,11 +19,11 @@ body {
     }
 
     .pink-bg {
-      display: none;
       z-index: -1;
       position: absolute;
-      left: 0;
-      top: 0;
+      left: 100%;
+      top: 100%;
+      transform: translate(-100%, -100%);
     }
 
     #phone {
@@ -33,7 +34,7 @@ body {
       min-height: max-content;
       margin-top: 7rem;
       overflow: hidden;
-      box-shadow: 0rem 7rem 8.4rem rgba(0, 0, 0, 0.226);
+      box-shadow: 0rem 7rem 8.4rem rgba(0, 0, 0, 0.144);
 
       .upper-phone {
         background: $bg-gradient;
@@ -190,12 +191,17 @@ body {
     }
 
     #booking {
-      margin: 4rem 3rem;
+      margin: auto 3rem;
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      .booking-title {
+        margin-top: 2rem;
+      }
       .booking-description {
+        max-width: 40rem;
         margin: 2rem 0;
         line-height: 3rem;
         font-size: $booking-text;
