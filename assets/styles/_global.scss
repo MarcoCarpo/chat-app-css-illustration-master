@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+
+  body {
+    h1 {
+      color: $very-dark-desat-vio;
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      font-size: $main-title;
+      text-align: center;
+    }
+
+    h2 {
+      color: $white;
+      font-weight: 500;
+      font-size: $samuel;
+    }
+
+    p {
+      color: $text;
+      font-family: "Rubik", sans-serif;
+      font-size: $chat-available;
+    }
+  }
+}
