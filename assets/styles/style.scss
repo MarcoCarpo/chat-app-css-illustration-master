@@ -1,0 +1,34 @@
+/* --------- Variables --------- */
+
+/* Typography Variables */
+
+$main-title: 4rem;                 /*    H1   */
+$samuel: 1.1rem;                   /*    H2   */
+$chat-available: 0.8rem;           /*   'Available...' and chat */
+$booking-text: 1.6rem;
+
+/*---- Color Variables ----*/
+
+/* Color text */
+$very-dark-desat-vio:  #3E2753; /*    H1   */
+$white: rgb(255, 255, 255);                  /*    h2   */
+$pale-violet:  #D89EFF;         /*    H3   */
+$text:  #C6CACD;                /*    p    */
+$chat-left: #9241c8bb;
+$chat-right: #6e5d7ebb;
+
+
+
+/* Color backgrounds */
+$bg-chat-left: #F0E5F5;
+$bg-chat-right: white;
+$bg-white: #FAFAFA;
+$bg-violet:  #F5F3F7;
+$bg-gradient: linear-gradient(269.62deg, #E942FF 0%, #8838FF 100%);
+
+
+/* --------- Import --------- */
+
+@import "global";
+@import "page";
+@import "query";

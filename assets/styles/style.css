@@ -1,1 +1,323 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* --------- Variables --------- */
+/* Typography Variables */
+/*    H1   */
+/*    H2   */
+/*   'Available...' and chat */
+/*---- Color Variables ----*/
+/* Color text */
+/*    H1   */
+/*    h2   */
+/*    H3   */
+/*    p    */
+/* Color backgrounds */
+/* --------- Import --------- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+}
+
+html body h1 {
+  color: #3E2753;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  text-align: center;
+}
+
+html body h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+html body p {
+  color: #C6CACD;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.8rem;
+}
+
+body {
+  position: relative;
+  background: #FAFAFA;
+  height: 100vh;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body main .gradient-bg {
+  z-index: -1;
+  position: absolute;
+  left: -33rem;
+  top: -46.3rem;
+}
+
+body main .pink-bg {
+  z-index: -1;
+  position: absolute;
+  left: 80%;
+  top: 100%;
+}
+
+body main #phone {
+  background: #f5f3f8;
+  border: 1rem solid white;
+  border-radius: 3rem;
+  min-width: 25rem;
+  margin-top: 7rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 57px 84px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 57px 84px rgba(0, 0, 0, 0.1);
+}
+
+body main #phone .upper-phone {
+  background: linear-gradient(269.62deg, #E942FF 0%, #8838FF 100%);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.185);
+          box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.185);
+}
+
+body main #phone .upper-phone .notch {
+  width: 50%;
+  margin: 0 auto;
+  height: 1.5rem;
+  border-bottom-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  background: white;
+}
+
+body main #phone .upper-phone .phone-contact-name {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main #phone .upper-phone .phone-contact-name .samuel-photo {
+  padding: 0 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0.5rem;
+}
+
+body main #phone .upper-phone .phone-contact-name .samuel-photo img {
+  width: 70%;
+  border-radius: 50%;
+  border: 0.1rem solid white;
+}
+
+body main #phone .upper-phone .phone-contact-name .samuel-state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main #phone .upper-phone .phone-contact-name .dots {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body main #phone .conversation {
+  width: 100%;
+}
+
+body main #phone .conversation .conversation-container {
+  max-width: 100%;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main #phone .conversation .conversation-container .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+body main #phone .conversation .conversation-container .block .message {
+  border-radius: 1rem;
+  padding: 0.8rem;
+  margin: 0.4rem 0;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
+          box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
+}
+
+body main #phone .conversation .conversation-container .block .purple {
+  background: #F0E5F5;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-bottom-left-radius: 0.4rem;
+}
+
+body main #phone .conversation .conversation-container .block .purple p {
+  color: #9241c8bb;
+}
+
+body main #phone .conversation .conversation-container .block .white {
+  background: white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-bottom-right-radius: 0.4rem;
+}
+
+body main #phone .conversation .conversation-container .block .white p {
+  color: #6e5d7ebb;
+}
+
+body main #phone .conversation .conversation-container .block .dogs-pictures {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0.4rem 0;
+}
+
+body main #phone .conversation .conversation-container .block .dogs-pictures img {
+  padding: 0 0.25rem;
+}
+
+body main #phone .conversation .conversation-container .block .option-walk {
+  width: 16rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background: linear-gradient(269.62deg, #E942FF 0%, #8838FF 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+body main #phone .conversation .conversation-container .block .option-walk p {
+  color: rgba(255, 255, 255, 0.726);
+  margin-left: 1rem;
+}
+
+body main #phone .conversation .conversation-container .block .option-walk .price {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body main #phone .conversation .conversation-container .block .option-walk .price p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+body main #phone .type-message {
+  border-radius: 2rem;
+  margin: 1rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #phone .type-message p {
+  margin-left: 1.8rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body main #phone .type-message .submit {
+  padding: 0.5rem;
+}
+
+body main #booking .booking-description {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
