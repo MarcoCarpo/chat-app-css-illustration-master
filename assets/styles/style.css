@@ -81,7 +81,7 @@ main {
   overflow: hidden;
 }
 
-#phone {
+.phone {
   background: #f5f3f8;
   border: 1rem solid white;
   border-radius: 3rem;
@@ -212,25 +212,25 @@ main {
           box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
 }
 
-.purple {
+.message-purple {
   background: #F0E5F5;
   -ms-flex-item-align: start;
       align-self: flex-start;
   border-bottom-left-radius: 0.4rem;
 }
 
-.purple p {
+.message-purple p {
   color: #9241c8bb;
 }
 
-.white {
+.message-white {
   background: white;
   -ms-flex-item-align: end;
       align-self: flex-end;
   border-bottom-right-radius: 0.4rem;
 }
 
-.white p {
+.message-white p {
   color: #6e5d7ebb;
 }
 
@@ -308,7 +308,7 @@ main {
   padding: 0.5rem;
 }
 
-#booking {
+.booking {
   margin: auto 3rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;

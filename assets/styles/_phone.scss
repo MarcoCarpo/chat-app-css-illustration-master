@@ -1,6 +1,6 @@
 // -----------GENERAL PHONE STYLES---------
 // ----------------------------------------
-#phone {
+.phone {
   background: #f5f3f8;
   border: 1rem solid $white;
   border-radius: 3rem;
@@ -10,8 +10,8 @@
   box-shadow: 0rem 7rem 8.4rem rgba(0, 0, 0, 0.144);
 }
 // ----------------------------------------
-// 
-// 
+//
+//
 // -----------UPPER PHONE STYLES---------
 // ----------------------------------------
 .upper-phone {
@@ -70,8 +70,8 @@
   justify-content: flex-end;
 }
 // ----------------------------------------
-// 
-// 
+//
+//
 // -----------CONVERSATION PHONE STYLES---------
 // ---------------------------------------------
 .conversation {
@@ -98,7 +98,7 @@
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
 }
 
-.purple {
+.message-purple {
   background: $bg-chat-left;
   align-self: flex-start;
   border-bottom-left-radius: 0.4rem;
@@ -108,7 +108,7 @@
   }
 }
 
-.white {
+.message-white {
   background: $bg-chat-right;
   align-self: flex-end;
   border-bottom-right-radius: 0.4rem;
@@ -157,8 +157,8 @@
   }
 }
 // ----------------------------------------
-// 
-// 
+//
+//
 // -----------TYPE AND SUBMIT PHONE STYLES---------
 // ------------------------------------------------
 .type-message {
