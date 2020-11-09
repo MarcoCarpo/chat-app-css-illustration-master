@@ -371,19 +371,16 @@ main {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  body main #booking {
+  body .booking {
     margin: 0rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  body main #booking .booking-description {
+  body .booking .booking-description {
     text-align: left;
   }
-  body main .attribution {
+  body .attribution {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);

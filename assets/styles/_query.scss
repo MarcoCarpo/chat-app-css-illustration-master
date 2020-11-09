@@ -16,22 +16,21 @@
       margin: 0 auto;
       flex-direction: row;
       justify-content: space-around;
+    }
 
-      #booking {
-        margin: 0rem;
-        justify-content: center;
-        align-items: flex-start;
+    .booking {
+      margin: 0rem;
+      align-items: flex-start;
 
-        .booking-description {
-          text-align: left;
-        }
+      .booking-description {
+        text-align: left;
       }
+    }
 
-      .attribution {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-      }
+    .attribution {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
