@@ -76,26 +76,26 @@
 // ---------------------------------------------
 .conversation {
   width: 100%;
-}
 
-.conversation-container {
-  max-width: 100%;
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
+  .conversation-container {
+    max-width: 100%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .block {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
-}
 
-.message {
-  border-radius: 1rem;
-  padding: 0.8rem;
-  margin: 0.4rem 0;
-  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
+  .message {
+    border-radius: 1rem;
+    padding: 0.8rem;
+    margin: 0.4rem 0;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
+  }
 }
 
 .message-purple {

@@ -181,7 +181,7 @@ main {
   width: 100%;
 }
 
-.conversation-container {
+.conversation .conversation-container {
   max-width: 100%;
   margin: 1rem;
   display: -webkit-box;
@@ -204,7 +204,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.message {
+.block .message {
   border-radius: 1rem;
   padding: 0.8rem;
   margin: 0.4rem 0;
