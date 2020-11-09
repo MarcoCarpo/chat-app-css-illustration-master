@@ -1,221 +1,65 @@
 body {
-  position: relative;
   background: $bg-white;
-  height: 100vh;
-
-  main {
-    min-width: 40rem;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-
-    .gradient-bg {
-      z-index: -1;
-      position: absolute;
-      left: -33rem;
-      top: -46.3rem;
-    }
-
-    .pink-bg {
-      z-index: -1;
-      position: absolute;
-      left: 100%;
-      top: 100%;
-      transform: translate(-100%, -100%);
-    }
-
-    #phone {
-      background: #f5f3f8;
-      border: 1rem solid $white;
-      border-radius: 3rem;
-      min-width: 25rem;
-      min-height: max-content;
-      margin-top: 7rem;
-      overflow: hidden;
-      box-shadow: 0rem 7rem 8.4rem rgba(0, 0, 0, 0.144);
-
-      .upper-phone {
-        background: $bg-gradient;
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        border-bottom-left-radius: 0.7rem;
-        border-bottom-right-radius: 0.7rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.185);
-
-        .notch {
-          width: 50%;
-          margin: 0 auto;
-          height: 1.5rem;
-          border-bottom-right-radius: 1.2rem;
-          border-bottom-left-radius: 1.2rem;
-          background: $white;
-        }
-
-        .phone-contact-name {
-          height: 100%;
-          margin: 0;
-          width: 100%;
-          padding: 1.5rem;
-          display: flex;
-
-          .samuel-photo {
-            padding: 0 0rem;
-            display: flex;
-            justify-content: center;
-            padding: 0 0.5rem;
-
-            img {
-              width: 70%;
-              border-radius: 50%;
-              border: 0.1rem solid white;
-            }
-          }
-
-          .samuel-state {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-          }
-
-          .dots {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
-          }
-        }
-      }
-
-      .conversation {
-        width: 100%;
-        .conversation-container {
-          max-width: 100%;
-          margin: 1rem;
-          display: flex;
-          flex-direction: column;
-
-          .block {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 0.5rem;
-
-            .message {
-              border-radius: 1rem;
-              padding: 0.8rem;
-              margin: 0.4rem 0;
-              box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
-            }
-
-            .purple {
-              background: $bg-chat-left;
-              align-self: flex-start;
-              border-bottom-left-radius: 0.4rem;
-
-              p {
-                color: $chat-left;
-              }
-            }
-
-            .white {
-              background: $bg-chat-right;
-              align-self: flex-end;
-              border-bottom-right-radius: 0.4rem;
-
-              p {
-                color: $chat-right;
-              }
-            }
-
-            .dogs-pictures {
-              align-self: flex-end;
-              margin: 0.4rem 0;
-
-              img {
-                padding: 0 0.25rem;
-              }
-            }
-
-            .option-walk {
-              width: 16rem;
-              align-self: flex-start;
-              background: $bg-gradient;
-              display: flex;
-              align-items: center;
-              padding: 1rem;
-              border-bottom-left-radius: 0.4rem;
-
-              p {
-                color: rgba(255, 255, 255, 0.726);
-                margin-left: 1rem;
-              }
-
-              .price {
-                flex: 1;
-                display: flex;
-                justify-content: flex-end;
-
-                p {
-                  color: white;
-                  font-size: 1rem;
-                  font-weight: 700;
-                  margin-right: 0.5rem;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .type-message {
-        border-radius: 2rem;
-        margin: 1rem;
-        background: $white;
-        display: flex;
-        align-items: center;
-
-        p {
-          margin-left: 1.8rem;
-          flex: 1;
-        }
-
-        .submit {
-          padding: 0.5rem;
-        }
-      }
-    }
-
-    #booking {
-      margin: auto 3rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .booking-title {
-        margin-top: 2rem;
-      }
-      .booking-description {
-        max-width: 40rem;
-        margin: 2rem 0;
-        line-height: 3rem;
-        font-size: $booking-text;
-        text-align: center;
-      }
-    }
-  }
+  position: relative;
 }
 
+.gradient-bg {
+  z-index: -1;
+  position: fixed;
+  right: 100%;
+  bottom: 100%;
+  transform: translate(50%, 50%);
+}
+
+.pink-bg {
+  position: fixed;
+  left: 100%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+// ----------- PHONE STYLES---------------------
+// ---------------------------------------------
+@import "phone";
+// ---------------------------------------------
+//
+//
+// ----------- BOOKING STYLES---------------------
+// ---------------------------------------------
+#booking {
+  margin: auto 3rem;
+  flex: 1;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-title {
+  margin-top: 2rem;
+}
+.booking-description {
+  margin: 2rem 0;
+  line-height: 3rem;
+  font-size: $booking-text;
+  text-align: center;
+}
+// ---------------------------------------------
+//
+//
 .attribution {
-  position: absolute;
+  margin: 1rem 0;
   bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
   font-size: 11px;
   text-align: center;
 

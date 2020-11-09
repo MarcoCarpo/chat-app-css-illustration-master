@@ -44,14 +44,29 @@ html body p {
 }
 
 body {
-  position: relative;
   background: #FAFAFA;
-  height: 100vh;
+  position: relative;
 }
 
-body main {
-  min-width: 40rem;
-  min-height: 100%;
+.gradient-bg {
+  z-index: -1;
+  position: fixed;
+  right: 100%;
+  bottom: 100%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.pink-bg {
+  position: fixed;
+  left: 100%;
+  top: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main {
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,39 +78,21 @@ body main {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
-body main .gradient-bg {
-  z-index: -1;
-  position: absolute;
-  left: -33rem;
-  top: -46.3rem;
-}
-
-body main .pink-bg {
-  z-index: -1;
-  position: absolute;
-  left: 100%;
-  top: 100%;
-  -webkit-transform: translate(-100%, -100%);
-          transform: translate(-100%, -100%);
-}
-
-body main #phone {
+#phone {
   background: #f5f3f8;
   border: 1rem solid white;
   border-radius: 3rem;
   min-width: 25rem;
-  min-height: -webkit-max-content;
-  min-height: -moz-max-content;
-  min-height: max-content;
   margin-top: 7rem;
   overflow: hidden;
   -webkit-box-shadow: 0rem 7rem 8.4rem rgba(0, 0, 0, 0.144);
           box-shadow: 0rem 7rem 8.4rem rgba(0, 0, 0, 0.144);
 }
 
-body main #phone .upper-phone {
+.upper-phone {
   background: linear-gradient(269.62deg, #E942FF 0%, #8838FF 100%);
   position: relative;
   width: 100%;
@@ -119,7 +116,7 @@ body main #phone .upper-phone {
           box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.185);
 }
 
-body main #phone .upper-phone .notch {
+.notch {
   width: 50%;
   margin: 0 auto;
   height: 1.5rem;
@@ -128,7 +125,7 @@ body main #phone .upper-phone .notch {
   background: white;
 }
 
-body main #phone .upper-phone .phone-contact-name {
+.phone-contact-name {
   height: 100%;
   margin: 0;
   width: 100%;
@@ -138,7 +135,7 @@ body main #phone .upper-phone .phone-contact-name {
   display: flex;
 }
 
-body main #phone .upper-phone .phone-contact-name .samuel-photo {
+.samuel-photo {
   padding: 0 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,13 +146,13 @@ body main #phone .upper-phone .phone-contact-name .samuel-photo {
   padding: 0 0.5rem;
 }
 
-body main #phone .upper-phone .phone-contact-name .samuel-photo img {
+.samuel-photo img {
   width: 70%;
   border-radius: 50%;
   border: 0.1rem solid white;
 }
 
-body main #phone .upper-phone .phone-contact-name .samuel-state {
+.samuel-state {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,7 +165,7 @@ body main #phone .upper-phone .phone-contact-name .samuel-state {
           justify-content: space-evenly;
 }
 
-body main #phone .upper-phone .phone-contact-name .dots {
+.dots {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -180,11 +177,11 @@ body main #phone .upper-phone .phone-contact-name .dots {
           justify-content: flex-end;
 }
 
-body main #phone .conversation {
+.conversation {
   width: 100%;
 }
 
-body main #phone .conversation .conversation-container {
+.conversation-container {
   max-width: 100%;
   margin: 1rem;
   display: -webkit-box;
@@ -196,7 +193,7 @@ body main #phone .conversation .conversation-container {
           flex-direction: column;
 }
 
-body main #phone .conversation .conversation-container .block {
+.block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,7 +204,7 @@ body main #phone .conversation .conversation-container .block {
   margin-bottom: 0.5rem;
 }
 
-body main #phone .conversation .conversation-container .block .message {
+.message {
   border-radius: 1rem;
   padding: 0.8rem;
   margin: 0.4rem 0;
@@ -215,39 +212,39 @@ body main #phone .conversation .conversation-container .block .message {
           box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.123);
 }
 
-body main #phone .conversation .conversation-container .block .purple {
+.purple {
   background: #F0E5F5;
   -ms-flex-item-align: start;
       align-self: flex-start;
   border-bottom-left-radius: 0.4rem;
 }
 
-body main #phone .conversation .conversation-container .block .purple p {
+.purple p {
   color: #9241c8bb;
 }
 
-body main #phone .conversation .conversation-container .block .white {
+.white {
   background: white;
   -ms-flex-item-align: end;
       align-self: flex-end;
   border-bottom-right-radius: 0.4rem;
 }
 
-body main #phone .conversation .conversation-container .block .white p {
+.white p {
   color: #6e5d7ebb;
 }
 
-body main #phone .conversation .conversation-container .block .dogs-pictures {
+.dogs-pictures {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin: 0.4rem 0;
 }
 
-body main #phone .conversation .conversation-container .block .dogs-pictures img {
+.dogs-pictures img {
   padding: 0 0.25rem;
 }
 
-body main #phone .conversation .conversation-container .block .option-walk {
+.option-walk {
   width: 16rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -258,16 +255,18 @@ body main #phone .conversation .conversation-container .block .option-walk {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0.4rem 0rem;
   padding: 1rem;
+  border-radius: 1rem;
   border-bottom-left-radius: 0.4rem;
 }
 
-body main #phone .conversation .conversation-container .block .option-walk p {
+.option-walk p {
   color: rgba(255, 255, 255, 0.726);
   margin-left: 1rem;
 }
 
-body main #phone .conversation .conversation-container .block .option-walk .price {
+.price {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -279,14 +278,14 @@ body main #phone .conversation .conversation-container .block .option-walk .pric
           justify-content: flex-end;
 }
 
-body main #phone .conversation .conversation-container .block .option-walk .price p {
+.price p {
   color: white;
   font-size: 1rem;
   font-weight: 700;
   margin-right: 0.5rem;
 }
 
-body main #phone .type-message {
+.type-message {
   border-radius: 2rem;
   margin: 1rem;
   background: white;
@@ -298,22 +297,23 @@ body main #phone .type-message {
           align-items: center;
 }
 
-body main #phone .type-message p {
+.type-message p {
   margin-left: 1.8rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-body main #phone .type-message .submit {
+.submit {
   padding: 0.5rem;
 }
 
-body main #booking {
+#booking {
   margin: auto 3rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  max-width: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,12 +329,11 @@ body main #booking {
           align-items: center;
 }
 
-body main #booking .booking-title {
+.booking-title {
   margin-top: 2rem;
 }
 
-body main #booking .booking-description {
-  max-width: 40rem;
+.booking-description {
   margin: 2rem 0;
   line-height: 3rem;
   font-size: 1.6rem;
@@ -342,11 +341,8 @@ body main #booking .booking-description {
 }
 
 .attribution {
-  position: absolute;
+  margin: 1rem 0;
   bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   font-size: 11px;
   text-align: center;
 }
@@ -356,22 +352,42 @@ body main #booking .booking-description {
 }
 
 @media screen and (min-width: 1024px) {
+  body .gradient-bg {
+    right: 90%;
+    bottom: 80%;
+  }
+  body .pink-bg {
+    left: 90%;
+  }
   body main {
+    overflow: initial;
+    min-width: 80rem;
     width: 50%;
     margin: 0 auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  body main .gradient-bg {
-    z-index: -1;
-    position: absolute;
-    left: -60%;
-    top: -20%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   body main #booking {
-    margin: 0;
+    margin: 0rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body main #booking .booking-description {
+    text-align: left;
+  }
+  body main .attribution {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 /*# sourceMappingURL=style.css.map */
