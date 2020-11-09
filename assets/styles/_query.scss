@@ -1,36 +1,40 @@
 @media screen and (min-width: 1024px) {
-  body {
-    .gradient-bg {
-      right: 90%;
-      bottom: 80%;
-    }
 
-    .pink-bg {
-      left: 90%;
-    }
 
-    main {
-      overflow: initial;
-      min-width: 80rem;
-      width: 50%;
-      margin: 0 auto;
-      flex-direction: row;
-      justify-content: space-around;
-    }
+  .gradient-bg {
+    right: 90%;
+    bottom: 80%;
+  }
 
-    .booking {
-      margin: 0rem;
-      align-items: flex-start;
+  .pink-bg {
+    left: 90%;
+  }
 
-      .booking-description {
-        text-align: left;
-      }
-    }
+  main {
+    overflow: initial;
+    min-width: 80rem;
+    width: 50%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-    .attribution {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+  .phone {
+    transform: scale(1.2);
+  }
+
+  .booking {
+    margin: 0rem;
+    align-items: flex-start;
+  }
+
+  .booking-description {
+    text-align: left;
+  }
+
+  .attribution {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

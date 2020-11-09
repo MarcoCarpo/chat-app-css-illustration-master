@@ -16,6 +16,26 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-animation: smooth;
+          animation: smooth;
+}
+
+@-webkit-keyframes smooth {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes smooth {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 html {
@@ -351,15 +371,29 @@ main {
   color: #3e52a3;
 }
 
+* {
+  -webkit-animation: smooth 1s;
+          animation: smooth 1s;
+}
+
+@keyframes smooth {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
-  body .gradient-bg {
+  .gradient-bg {
     right: 90%;
     bottom: 80%;
   }
-  body .pink-bg {
+  .pink-bg {
     left: 90%;
   }
-  body main {
+  main {
     overflow: initial;
     min-width: 80rem;
     width: 50%;
@@ -371,16 +405,20 @@ main {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  body .booking {
+  .phone {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .booking {
     margin: 0rem;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  body .booking .booking-description {
+  .booking-description {
     text-align: left;
   }
-  body .attribution {
+  .attribution {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);

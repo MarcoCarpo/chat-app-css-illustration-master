@@ -1,0 +1,13 @@
+* {
+    animation: smooth 1s;
+}
+
+
+@keyframes smooth {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
